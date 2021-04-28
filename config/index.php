@@ -15,7 +15,7 @@
 		}
 	</style>
 
-	<h2>Data Daerah Indonesia Dengan PHP, MySQLi & Ajax <br> <a href="https://www.malasngoding.com/menampilkan-data-daerah-indonesia-php-mysqli-ajax">www.malasngoding.com</a></h2>
+	<h2>Data Daerah Indonesia Dengan PHP, MySQLi & Ajax <br> </h2>
 
 	<select id="form_prov">
 		<option value="">Pilih Provinsi</option>
