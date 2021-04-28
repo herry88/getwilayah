@@ -20,7 +20,7 @@
 	<select id="form_prov">
 		<option value="">Pilih Provinsi</option>
 		<?php 
-		$daerah = mysqli_query($koneksi,"SELECT kode,nama FROM wilayah_2020 WHERE CHAR_LENGTH(kode)=2 ORDER BY nama");
+		$daerah = mysqli_query($conn,"SELECT kode,nama FROM wilayah_2020 WHERE CHAR_LENGTH(kode)=2 ORDER BY nama");
 		while($d = mysqli_fetch_array($daerah)){
 			?>
 			<option value="<?php echo $d['kode']; ?>"><?php echo $d['nama']; ?></option>
