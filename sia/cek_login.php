@@ -11,15 +11,13 @@ $ketemu = mysqli_num_rows($login);
 $data = mysqli_fetch_array($login);
 
 //apabila username dan password valid
-if($ketemu > 0){
+if ($ketemu > 0) {
   session_start();
   $_SESSION['namauser'] = $data['username'];
   $_SESSION['level'] = $data['level'];
-// header("location:modul/mod_beranda/beranda.php");
-echo "<h1>Berhasil LOGIn</h1>";
-}
-else{
+  $_SESSION['passuser'] = $data['password'];
+  header("location:form_berita.php");
+} else {
   echo "<center>Login Gagal username dan password tidak benar</center>";
   echo "Ulangi lagi";
 }
-?>
