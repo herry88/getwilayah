@@ -46,14 +46,21 @@ if (empty($_SESSION['namauser']) and empty($_SESSION['passuser'])) {
                                             <th>Tahun Akademik</th>
                                             <th>Keterangan</th>
                                             <th>Tools</th>
-                                        </thead>
-                                        <tbody>
+                                        </thead>";
+                                        $no = 1;
+                                        $query = mysqli_query($conn, "SELECT * FROM tahun_akademik");
+                                        while ($t = mysqli_fetch_array($query)){
+                                            echo"
+                                            <tbody>
                                             <tr>
+                                                <td>$no</td>
+                                                <td>$t[tahun_akademik]</td>
+                                                <td>$t[keterangan]</td>
                                                 <td></td>
-                                                <td></td>
-                                                <td></td>
-                                                <td></td>
-                                            </tr>
+                                            </tr>";
+                                            $no++;
+                                        }
+                                        echo"
                                         </tbody>
                                     </table>
                                 </div>

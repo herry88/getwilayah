@@ -10,7 +10,12 @@ else{
     $act = $_GET['act'];
     //input tahun akademik
     if($module=='tahunakademik' AND $act =='input'){
-        echo "Jika benar tulisan ini akan tampil";
+        $tahun_akademik = $_POST['tahun_akademik'];
+        $keterangan = $_POST['keterangan'];
+        //function simpan data
+        $input = mysqli_query($conn, "INSERT INTO tahun_akademik(tahun_akademik, keterangan)VALUES('$tahun_akademik','$keterangan')");
+        header("location: ../../media.php?module=".$module);
+
     }
 
 }
