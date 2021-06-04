@@ -16,7 +16,7 @@ if ($ketemu > 0) {
   $_SESSION['namauser'] = $data['username'];
   $_SESSION['level'] = $data['level'];
   $_SESSION['passuser'] = $data['password'];
-  header("location:form_berita.php");
+  header("location:media.php?module=beranda");
 } else {
   echo "<center>Login Gagal username dan password tidak benar</center>";
   echo "Ulangi lagi";

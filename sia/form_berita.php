@@ -11,7 +11,7 @@
 <body>
   <?php
   session_start();
-  include "config/conn.php";
+  // include "config/conn.php";
   //apabila user blm login
   if (empty($_SESSION['namauser']) and empty($_SESSION['passuser'])) {
     echo "<center>Untuk mengisi berita, harap login";

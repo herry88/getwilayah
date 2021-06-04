@@ -11,10 +11,18 @@
       </a>
     </li>
     <li class="nav-item">
-      <a href="pages/widgets.html" class="nav-link">
+      <a href="?module=tahunakademik" class="nav-link">
         <i class="nav-icon fas fa-th"></i>
         <p>
-          Widgets
+          Tahun Akademik
+        </p>
+      </a>
+    </li>
+    <li class="nav-item">
+      <a href="?module=guru" class="nav-link">
+        <i class="nav-icon fas fa-book"></i>
+        <p>
+          Guru
         </p>
       </a>
     </li>
