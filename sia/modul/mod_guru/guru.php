@@ -35,7 +35,7 @@ if (empty($_SESSION['namauser']) and empty($_SESSION['passuser'])) {
                     <div class=\"col-lg-8\">
                         <div class=\"card card-primary card-outline\">
                             <div class=\"card-header\">
-                               <button type=\"button\" class=\"btn btn-primary\" onclick=window.location.href=\"?module=tahunakademik&act=tambahtahunakademik\">Add Page</button>
+                               <button type=\"button\" class=\"btn btn-primary\" onclick=window.location.href=\"?module=guru&act=input\">Add Page</button>
                             </div>
                             <div class=\"card-body\">
                                 <div class=\"card-title\">
