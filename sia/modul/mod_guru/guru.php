@@ -91,7 +91,32 @@ if (empty($_SESSION['namauser']) and empty($_SESSION['passuser'])) {
             <div class=\"row\">
                 <div class=\"col-lg-8\">
                     <div class=\"card card-primary card-outline\">
-                        <h2>halaman form tambah</h2>
+                        <div class=\"card-header\">
+                            <h2>Tambah Guru</h2>
+                        </div>
+                        <div class=\"card-body\">
+                            
+                            <div class=\"card-title\">
+                                <form action='$aksi?module=tahunakademik&act=input' method=\"POST\">
+                                    <table class='table table-bordered'>
+                                            <tr>
+                                                <td>Tahun Akademik :</td>
+                                                <td><input type=\"text\" class=\"form-control\" name=\"tahun_akademik\"></td>
+                                            </tr>
+                                            <tr>
+                                                <td>Keterangan</td>
+                                                <td><input type=\"text\" name=\"keterangan\" class='form-control'></td>
+                                            </tr>
+                                            <tr>
+                                                <td>&nbsp;</td>
+                                                <td><button class='btn btn-primary' type='submit'>Simpan Data</button> 
+                                                    <button class='btn btn-danger' type='button' onclick=window.history.back()>Batal</button>
+                                                </td>
+                                            </tr>
+                                    </table>
+                                </form>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
