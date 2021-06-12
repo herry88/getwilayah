@@ -19,5 +19,10 @@ if(empty($_SESSION['namauser']) AND empty($_SESSION['passuser'])){
         $query = mysqli_query($conn, $input);
         header("location:../../media.php?module=".$module);
     } 
+    //untuk delete data guru
+    elseif($module == 'guru' AND $act=='hapus'){
+        $hapus = mysqli_query($conn, "DELETE FROM guru WHERE id_guru = '$_GET[id]'");
+        header("location:../../media.php?module=".$module);
+    }
 }
 ?>

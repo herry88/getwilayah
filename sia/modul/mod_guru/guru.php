@@ -67,7 +67,10 @@ if (empty($_SESSION['namauser']) and empty($_SESSION['passuser'])) {
                         </td>";
                 }
                 echo "
-                        <td><a href='?module=guru&act=editguru&id=$t[id_guru]'>Edit</a></td>
+                        <td>
+                            <a href='?module=guru&act=editguru&id=$t[id_guru]' class='btn btn-warning' title='Edit'><i class='fa fa-edit'></i></a>
+                            <a href='$aksi?module=guru&act=hapus&id=$t[id_guru]' class='btn btn-danger' title='Delete'><i class='fa fa-trash'></i></a>
+                        </td>
                 </tr>";
                 $no++;
             }
