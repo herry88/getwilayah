@@ -12,10 +12,11 @@ if(empty($_SESSION['namauser']) AND empty($_SESSION['passuser'])){
         $nm_guru = $_POST['nm_guru'];
         $alamat = $_POST['alamat'];
         $status = $_POST['masaaktif'];
+        $tahun_akademik = $_POST['id_tahun_akademik'];
      
 
         //save data
-        $input = "INSERT INTO guru(nm_guru, alamat, status)VALUES('$nm_guru','$alamat','$status')";
+        $input = "INSERT INTO guru(nm_guru, alamat, id_tahun_akademik, status)VALUES('$nm_guru','$alamat','$tahun_akademik','$status')";
         $query = mysqli_query($conn, $input);
         header("location:../../media.php?module=".$module);
     } 
